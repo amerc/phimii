@@ -1,0 +1,1 @@
+vhdtdtfi -prj TCP -o /home/amer/Nexys3/TCP/OneHz25MHz.vhi -module OneHz25MHz -template /opt/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work source/OneHz25MHz.vhd 

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/amer/Nexys3/TCP/NEXYS3/user_design.v -lang verilog -prj TCP -o user_design.spl -module user_design -template /opt/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w user_design.spl /home/amer/Nexys3/TCP/user_design.sym 

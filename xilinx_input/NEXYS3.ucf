@@ -1,0 +1,119 @@
+NET "CLK_IN" LOC = V10;
+
+NET "RST" LOC = B8;
+## System level constraints
+NET "RST" TIG;
+
+#PIN "dcm_sp_inst3.CLKIN" CLOCK_DEDICATED_ROUTE = FALSE;
+#PIN "dcm_sp_inst3.CLKFB" CLOCK_DEDICATED_ROUTE = FALSE;
+## RS232 PORT
+NET "fx2Clk_pin" 	LOC="H2"  | IOSTANDARD=LVCMOS25;   # IFCLK
+NET "RS232_RX" 	LOC = N18 | IOSTANDARD=LVCMOS25;
+NET "RS232_TX" 	LOC = N17 | IOSTANDARD=LVCMOS25;
+
+##
+## 2   on SW4 pushbutton (active-high)
+NET "GPIO_BUTTONS[0]" LOC = C4;
+## 2   on SW7 pushbutton (active-high)
+NET "GPIO_BUTTONS[1]" LOC = D9;
+## 2   on SW5 pushbutton (active-high)
+NET "GPIO_BUTTONS[2]" LOC = A8;
+## 2   on SW8 pushbutton (active-high)
+NET "GPIO_BUTTONS[3]" LOC = C9;
+
+##
+NET "GPIO_LEDS[0]" LOC = U16;
+NET "GPIO_LEDS[1]" LOC = V16;
+NET "GPIO_LEDS[2]" LOC = U15;
+NET "GPIO_LEDS[3]" LOC = V15;
+NET "GPIO_LEDS[4]" LOC = M11;
+NET "GPIO_LEDS[5]" LOC = N11;
+NET "GPIO_LEDS[6]" LOC = R11;
+NET "GPIO_LEDS[7]" LOC = T11;
+
+##
+## 1   on S2 DIP switch (active-high)
+NET "GPIO_SWITCHES[0]" LOC = T10;
+## 2   on S2 DIP switch (active-high)
+NET "GPIO_SWITCHES[1]" LOC = T9;
+## 3   on S2 DIP switch (active-high)
+NET "GPIO_SWITCHES[2]" LOC = V9;
+## 4   on S2 DIP switch (active-high)
+NET "GPIO_SWITCHES[3]" LOC = M8;
+## 4   on S2 DIP switch (active-high)
+NET "GPIO_SWITCHES[4]" LOC = N8;
+## 4   on S2 DIP switch (active-high)
+NET "GPIO_SWITCHES[5]" LOC = U8;
+## 4   on S2 DIP switch (active-high)
+NET "GPIO_SWITCHES[6]" LOC = V8;
+## 4   on S2 DIP switch (active-high)
+NET "GPIO_SWITCHES[7]" LOC = T5;
+
+##
+## 36  ON U46
+NET "PHY_RESET" LOC = P3;
+NET "PHY_RESET" DRIVE = 24;
+#NET "PHY_RESET" SLEW = FAST;
+## 10  on U46
+NET "TXCLK" LOC = L5;
+
+## 18  on U46
+NET "TXD[0]" LOC = U2;
+## 19  on U46
+NET "TXD[1]" LOC = U1;
+## 20  on U46
+NET "TXD[2]" LOC = T2;
+## 24  on U46
+NET "TXD[3]" LOC = T1;
+
+## 16  on U46
+NET "TXEN" LOC = L2;
+## 13  on U46
+NET "TXER" LOC = P2;
+#NET "TXER" PULLDOWN;
+
+## 3   on U46
+NET "RXD<0>" LOC = P1;
+## 128 on U46
+NET "RXD<1>" LOC = N2;
+## 126 on U46
+NET "RXD<2>" LOC = N1;
+## 125 on U46
+NET "RXD<3>" LOC = M3;
+
+## 4   on U46
+NET "RXDV" LOC = L1;
+## 8   on U46
+NET "RXER" LOC = M1;
+## 7   ON U46
+NET "RXCLK" LOC = H4;
+## Added
+NET "PhyCol" LOC = P4;
+NET "CRS" LOC = N3; # Carrier sense (detection of a carrier)
+NET "CLK_IN" TNM_NET = "CLK_IN";
+TIMESPEC TS_CLK = PERIOD "CLK_IN" 10 ns HIGH 50 % INPUT_JITTER 50 ps;
+
+#Define the clock period of the 25MHz RXCLK
+NET "RXCLK" TNM_NET = "RXCLK";
+TIMESPEC TS_RXCLK = PERIOD "RXCLK" 40 ns HIGH 50 %;
+
+#Define the  setup and hold times of RX data relative to RXCLK
+#INST "RXD[?]" TNM = "IN_MII";
+#INST "RXDV" TNM = "IN_MII";
+#INST "RXER" TNM = "IN_MII";
+#TIMEGRP "IN_MII" OFFSET = IN 3 ns VALID 3 ns BEFORE "INTERNAL_RXCLK";
+
+## 7 sseg_outment display
+NET "sseg_out<0>"         LOC = "T17" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L51P_M1DQ12,                    Sch name = CA
+NET "sseg_out<1>"         LOC = "T18" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L51N_M1DQ13,                    Sch name = CB#NET "sseg_out<2>"         LOC = "U17" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L52P_M1DQ14,                    Sch name = CC
+NET "sseg_out<2>"         LOC = "U17" | IOSTANDARD = "LVCMOS25";
+NET "sseg_out<3>"         LOC = "U18" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L52N_M1DQ15,                    Sch name = CD
+NET "sseg_out<4>"         LOC = "M14" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L53P,                           Sch name = CE
+NET "sseg_out<5>"         LOC = "N14" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L53N_VREF,                      Sch name = CF
+NET "sseg_out<6>"         LOC = "L14" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L61P,                           Sch name = CG
+NET "sseg_out<7>"         LOC = "M13" | IOSTANDARD = "LVCMOS25";  #DP #Bank = 1, Pin name = IO_L61N,                           Sch name = DP
+
+NET "anodes_out<0>"        LOC = "N16" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L50N_M1UDQSN,                   Sch name = AN0
+NET "anodes_out<1>"        LOC = "N15" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L50P_M1UDQS,                    Sch name = AN1
+NET "anodes_out<2>"        LOC = "P18" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L49N_M1DQ11,                    Sch name = AN2
+NET "anodes_out<3>"        LOC = "P17" | IOSTANDARD = "LVCMOS25";   #Bank = 1, Pin name = IO_L49P_M1DQ10,                    Sch name = AN3

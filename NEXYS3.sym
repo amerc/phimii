@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="NEXYS3">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2014-4-6T0:45:38</timestamp>
+    <pin polarity="Input" x="0" y="-544" name="CLK_IN" />
+    <pin polarity="Input" x="0" y="-480" name="RST" />
+    <pin polarity="Input" x="0" y="-416" name="RX" />
+    <pin polarity="Input" x="0" y="-352" name="RXDV" />
+    <pin polarity="Input" x="0" y="-288" name="RXER" />
+    <pin polarity="Input" x="0" y="-224" name="TXCLK" />
+    <pin polarity="Input" x="0" y="-160" name="RS232_RX" />
+    <pin polarity="Input" x="0" y="-96" name="GPIO_SWITCHES(7:0)" />
+    <pin polarity="Input" x="0" y="-32" name="GPIO_BUTTONS(3:0)" />
+    <pin polarity="BiDirectional" x="560" y="-96" name="RXCLK" />
+    <pin polarity="BiDirectional" x="560" y="-352" name="TXER" />
+    <pin polarity="Output" x="560" y="-544" name="TX" />
+    <pin polarity="Output" x="560" y="-480" name="PHY_RESET" />
+    <pin polarity="Output" x="560" y="-416" name="TXEN" />
+    <pin polarity="Output" x="560" y="-288" name="RS232_TX" />
+    <pin polarity="Output" x="560" y="-224" name="TXD(3:0)" />
+    <pin polarity="Output" x="560" y="-160" name="GPIO_LEDS(7:0)" />
+    <pin polarity="Input" x="0" y="32" name="ToPhyReset" />
+    <pin polarity="Output" x="560" y="32" name="nOEN" />
+    <pin polarity="BiDirectional" x="560" y="96" name="PhyCol" />
+    <pin polarity="BiDirectional" x="560" y="160" name="RXDio(3:0)" />
+    <graph>
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="280" y="-584" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-544" type="pin CLK_IN" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-480" type="pin RST" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-416" type="pin RX" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-352" type="pin RXDV" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-288" type="pin RXER" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-224" type="pin TXCLK" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-160" type="pin RS232_RX" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-96" type="pin GPIO_SWITCHES(7:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin GPIO_BUTTONS(3:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-96" type="pin RXCLK" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-352" type="pin TXER" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-544" type="pin TX" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-480" type="pin PHY_RESET" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-416" type="pin TXEN" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-288" type="pin RS232_TX" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-224" type="pin TXD(3:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="-160" type="pin GPIO_LEDS(7:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="32" type="pin ToPhyReset" />
+        <line x2="0" y1="32" y2="32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="32" type="pin nOEN" />
+        <line x2="560" y1="32" y2="32" x1="496" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="96" type="pin PhyCol" />
+        <line x2="560" y1="96" y2="96" x1="496" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="488" y="160" type="pin RXDio(3:0)" />
+        <rect width="64" x="496" y="148" height="24" />
+        <line x2="560" y1="160" y2="160" x1="496" />
+        <line x2="0" y1="-544" y2="-544" x1="64" />
+        <line x2="0" y1="-480" y2="-480" x1="64" />
+        <line x2="0" y1="-416" y2="-416" x1="64" />
+        <line x2="0" y1="-352" y2="-352" x1="64" />
+        <line x2="0" y1="-288" y2="-288" x1="64" />
+        <line x2="0" y1="-224" y2="-224" x1="64" />
+        <line x2="0" y1="-160" y2="-160" x1="64" />
+        <rect width="64" x="0" y="-108" height="24" />
+        <line x2="0" y1="-96" y2="-96" x1="64" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <line x2="560" y1="-544" y2="-544" x1="496" />
+        <line x2="560" y1="-480" y2="-480" x1="496" />
+        <line x2="560" y1="-416" y2="-416" x1="496" />
+        <line x2="560" y1="-352" y2="-352" x1="496" />
+        <line x2="560" y1="-288" y2="-288" x1="496" />
+        <rect width="64" x="496" y="-236" height="24" />
+        <line x2="560" y1="-224" y2="-224" x1="496" />
+        <rect width="64" x="496" y="-172" height="24" />
+        <line x2="560" y1="-160" y2="-160" x1="496" />
+        <line x2="560" y1="-96" y2="-96" x1="496" />
+        <rect width="432" x="64" y="-576" height="768" />
+    </graph>
+</symbol>

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work /home/amer/Nexys3/TCP/NEXYS3/server.v -lang verilog -prj TCP -o server.spl -module server -template /opt/14.6/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w server.spl /home/amer/Nexys3/TCP/server.sym 

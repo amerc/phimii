@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/amer/Nexys3/TCP/testing_ethernet_isim_beh3.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="testing_ethernet" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="21" />
+   <wvobject fp_name="/testing_ethernet/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/txclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txclk</obj_property>
+      <obj_property name="ObjectShortName">txclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/rxclk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rxclk</obj_property>
+      <obj_property name="ObjectShortName">rxclk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/rxer" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rxer</obj_property>
+      <obj_property name="ObjectShortName">rxer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/rxdv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rxdv</obj_property>
+      <obj_property name="ObjectShortName">rxdv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/rxd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rxd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">rxd[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/col" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">col</obj_property>
+      <obj_property name="ObjectShortName">col</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/tx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">tx[15:0]</obj_property>
+      <obj_property name="ObjectShortName">tx[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/tx_stb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_stb</obj_property>
+      <obj_property name="ObjectShortName">tx_stb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/rx_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_ack</obj_property>
+      <obj_property name="ObjectShortName">rx_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/txer" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txer</obj_property>
+      <obj_property name="ObjectShortName">txer</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/txen" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">txen</obj_property>
+      <obj_property name="ObjectShortName">txen</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/txd" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">txd[3:0]</obj_property>
+      <obj_property name="ObjectShortName">txd[3:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/phy_reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">phy_reset</obj_property>
+      <obj_property name="ObjectShortName">phy_reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/tx_ack" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">tx_ack</obj_property>
+      <obj_property name="ObjectShortName">tx_ack</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/rx" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">rx[15:0]</obj_property>
+      <obj_property name="ObjectShortName">rx[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/rx_stb" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rx_stb</obj_property>
+      <obj_property name="ObjectShortName">rx_stb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/clk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/txclk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">txclk_period</obj_property>
+      <obj_property name="ObjectShortName">txclk_period</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/testing_ethernet/rxclk_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">rxclk_period</obj_property>
+      <obj_property name="ObjectShortName">rxclk_period</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

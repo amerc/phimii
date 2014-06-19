@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/amer/Nexys3/TCP_2/NEXYS3.ncd
+OUTFILE=/home/amer/Nexys3/TCP_2/NEXYS3.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/amer/Nexys3/TCP_2
+LICENSE=WebPack
+USER_INFO=178889714_0_0_975

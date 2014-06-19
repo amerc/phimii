@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/amer/Nexys3/TCP/impact.xsl
+OUTFILE=/home/amer/Nexys3/TCP/impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=/home/amer/Nexys3/TCP
+LICENSE=iMPACT
+USER_INFO=iMPACT

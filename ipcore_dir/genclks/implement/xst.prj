@@ -1,0 +1,2 @@
+vhdl work ../../genclks.vhd
+vhdl work ../example_design/genclks_exdes.vhd

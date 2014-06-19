@@ -1,0 +1,23 @@
+Release 14.6 - ngc2edif P.68d (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design NEXYS3.ngc ...
+WARNING:NetListWriters:298 - No output is written to NEXYS3.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   ethernet_inst_1/Mmux_TX_PHY_STATE[4]_X_7_o_wide_mux_58_OUT_rs_cy<6 : 3> on
+   block NEXYS3 is not reconstructed, because there are some missing bus
+   signals.
+WARNING:NetListWriters:306 - Signal bus
+   ethernet_inst_1/Msub_GND_7_o_GND_7_o_sub_168_OUT<10:0>_cy<8 : 2> on block
+   NEXYS3 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus ethernet_inst_1/_n1050<10 : 0> on block
+   NEXYS3 is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus SERVER_INST_1/instruction_0<53 : 0> on
+   block NEXYS3 is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file NEXYS3.edif ...
+ngc2edif: Total memory usage is 115664 kilobytes
+

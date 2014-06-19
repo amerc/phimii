@@ -1,0 +1,2 @@
+vhdtdtfi -prj TCP -o /home/amer/Nexys3/TCP/seven_seg.tfi -module seven_seg -template /opt/14.6/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work seven_seg.vhd 
+vhdtdtfi -prj TCP -o /home/amer/Nexys3/TCP/seven_seg.vhi -module seven_seg -template /opt/14.6/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work seven_seg.vhd 

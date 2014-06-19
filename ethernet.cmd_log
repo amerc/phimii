@@ -1,0 +1,2 @@
+vhdtdtfi -lib work source/ethernet.vhd -prj TCP -o ethernet.spl -module ethernet -template /opt/14.6/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan6 -w ethernet.spl /home/amer/Nexys3/TCP/ethernet.sym 
