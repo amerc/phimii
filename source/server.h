@@ -139,9 +139,9 @@ unsigned get_ethernet_packet(unsigned packet[]){
 	}
 
         //Filter out packets not meant for us
-	//if(packet[0] != local_mac_address_hi && packet[0] != 0xffffu) return 0;//AMEr
-	//if(packet[1] != local_mac_address_med && packet[1] != 0xffffu) return 0;//AMER
-	//if(packet[2] != local_mac_address_lo && packet[2] != 0xffffu) return 0;//AMER
+	if(packet[0] != local_mac_address_hi && packet[0] != 0xffffu) return 0;//AMEr
+	if(packet[1] != local_mac_address_med && packet[1] != 0xffffu) return 0;//AMER
+	if(packet[2] != local_mac_address_lo && packet[2] != 0xffffu) return 0;//AMER
 
 	//Process ARP requests within the data link layer
 	if (packet[6] == 0x0806){ //ARP

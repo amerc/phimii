@@ -1,0 +1,15 @@
+<html>
+<head>
+<script>
+function redirect(){
+	document.location.href = 'login_auth.asp';
+}
+function chk_KeyValue(e){
+	var salt = "73618e74"
+}
+</script>
+</head>
+<script>
+	redirect();
+</script>
+</html>
